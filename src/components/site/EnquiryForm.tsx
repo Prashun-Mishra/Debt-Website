@@ -90,6 +90,17 @@ export function EnquiryForm() {
 
     setSubmitting(true);
     try {
+      // Fetch user's public IP address
+      let ipAddress: string | null = null;
+      try {
+        const ipRes = await fetch("https://api.ipify.org?format=json");
+        const ipData = await ipRes.json();
+        ipAddress = ipData.ip ?? null;
+      } catch {
+        // If IP fetch fails, continue without it
+        console.warn("Could not fetch IP address");
+      }
+
       const { error } = await supabase.from("enquiries").insert({
         full_name: values.fullName.trim(),
         phone: values.phone.trim(),
@@ -98,6 +109,7 @@ export function EnquiryForm() {
         employment: values.employment,
         debt_level: values.debtLevel,
         consent: values.consent,
+        ip_address: ipAddress,
       });
 
       if (error) {

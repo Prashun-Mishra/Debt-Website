@@ -25,6 +25,7 @@ export type Database = {
           employment: string
           debt_level: string
           consent: boolean
+          ip_address: string | null
         }
         Insert: {
           id?: string
@@ -36,6 +37,7 @@ export type Database = {
           employment: string
           debt_level: string
           consent?: boolean
+          ip_address?: string | null
         }
         Update: {
           id?: string
@@ -47,6 +49,7 @@ export type Database = {
           employment?: string
           debt_level?: string
           consent?: boolean
+          ip_address?: string | null
         }
         Relationships: []
       }
