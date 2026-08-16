@@ -29,23 +29,21 @@ function AboutPage() {
       <Header />
       <main>
         <section className="bg-cream">
-          <div className="mx-auto max-w-3xl px-4 py-14 text-center sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 lg:py-20 lg:px-8">
             <p className="eyebrow">About us</p>
             <h1 className="mt-3 text-4xl text-foreground sm:text-5xl">
-              A quiet first step, <em className="italic">not advice.</em>
+              Connecting People With <span className="text-forest">Trusted Financial Support</span>
             </h1>
-            <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground">
-              Square Up Any Debt is a UK lead provider. We do not give debt advice. Our only role is
-              to take a short enquiry and pass it to firms that are authorised and regulated by the
-              Financial Conduct Authority.
-            </p>
           </div>
         </section>
 
         <section className="bg-background">
           <div className="mx-auto max-w-3xl space-y-10 px-4 py-16 sm:px-6 lg:px-8">
             <div>
-              <h2 className="text-2xl text-foreground">Who We Are</h2>
+              <h2 className="text-2xl font-semibold text-foreground flex items-center gap-2.5">
+                <span className="h-6 w-1 rounded-full bg-forest inline-block" />
+                Who We Are
+              </h2>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 At Square Up Any Debt, we help people experiencing financial difficulties take the first step towards finding regulated debt support. We operate as an intermediary and referral service, collecting some initial information about your circumstances and, where appropriate and with your consent, securely passing your details to an FCA-authorised and regulated firm that can carry out a full assessment and provide regulated debt advice.
               </p>
@@ -57,7 +55,10 @@ function AboutPage() {
               </p>
             </div>
             <div>
-              <h2 className="text-2xl text-foreground">Our reason for being</h2>
+              <h2 className="text-2xl font-semibold text-foreground flex items-center gap-2.5">
+                <span className="h-6 w-1 rounded-full bg-forest inline-block" />
+                Our reason for being
+              </h2>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 Talking about money worries isn’t always easy. We make finding regulated support simpler, clearer and less overwhelming. Instead of navigating countless websites or trying to make sense of confusing financial terms, we help you take the first step towards speaking with an authorised and regulated adviser who can explain your options.
               </p>
@@ -70,7 +71,7 @@ function AboutPage() {
             <div className="text-center">
               <p className="eyebrow">Why Choose Us</p>
               <h2 className="mt-3 text-3xl text-foreground sm:text-4xl">
-                A quieter, kinder way to ask for help.
+                <span className="text-forest">Trusted Guidance.</span> Clear Options. A Better Way Forward.
               </h2>
             </div>
             <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -78,7 +79,7 @@ function AboutPage() {
                 <div className="grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest transition-colors duration-300 group-hover:bg-forest group-hover:text-forest-foreground">
                   <Heart className="h-6 w-6" strokeWidth={1.5} />
                 </div>
-                <h3 className="mt-5 text-lg text-foreground">Empathy first</h3>
+                <h3 className="mt-5 text-lg font-semibold text-foreground">Empathy first</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   Money worries are emotional, not just financial. Every enquiry is treated with care and understanding, never simply as a sales lead.
                 </p>
@@ -87,7 +88,7 @@ function AboutPage() {
                 <div className="grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest transition-colors duration-300 group-hover:bg-forest group-hover:text-forest-foreground">
                   <ShieldCheck className="h-6 w-6" strokeWidth={1.5} />
                 </div>
-                <h3 className="mt-5 text-lg text-foreground">Trusted, regulated support</h3>
+                <h3 className="mt-5 text-lg font-semibold text-foreground">Trusted, regulated support</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   We only refer to firms authorised and regulated by the Financial Conduct Authority. No shortcuts, no exceptions.
                 </p>
@@ -96,7 +97,7 @@ function AboutPage() {
                 <div className="grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest transition-colors duration-300 group-hover:bg-forest group-hover:text-forest-foreground">
                   <Eye className="h-6 w-6" strokeWidth={1.5} />
                 </div>
-                <h3 className="mt-5 text-lg text-foreground">Always transparent</h3>
+                <h3 className="mt-5 text-lg font-semibold text-foreground">Always transparent</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   We’re upfront about what we do, what we don’t do, and how your information is handled at every stage.
                 </p>

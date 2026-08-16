@@ -87,15 +87,13 @@ export function Hero() {
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:py-20 lg:px-8">
         <div>
           <h1 className="text-4xl leading-[1.1] text-foreground sm:text-5xl lg:text-[3.4rem]">
-            You don’t have to face debt alone. Explore your options and find the support you need.
+            <span className="text-forest">Struggling With Debt?</span> See What Options May Be Available
           </h1>
           <p className="mt-6 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-            We know that money worries can feel heavy, and talking about debt isn’t always easy.
-            You’re not alone, and taking that first step can be a positive move towards understanding
-            your options. Click “DEBT HELP” to get started and a member of our team will take the time
-            to understand your situation and collect some initial information. Where appropriate, we may
-            then connect you with an FCA-authorised debt advice partner who can provide regulated advice
-            and support based on your individual circumstances.
+            You may have options that could make managing your finances easier. Connect with a trusted FCA-regulated adviser to discuss your circumstances and understand what support may be available.
+          </p>
+          <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+            Click "DEBT HELP" to get started. A member of our team will take the time to understand your situation and collect some initial information before connecting you with the right support.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <CoralButton to="/enquiry">
@@ -194,7 +192,7 @@ export function Features() {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <p className="eyebrow">Why people choose us</p>
         <h2 className="mt-3 max-w-lg text-3xl leading-tight text-foreground sm:text-4xl">
-          No judgement. No pressure.
+          <span className="text-forest">No judgement. No pressure.</span>
           <br className="hidden sm:block" /> Just help understanding your debt options and what you can do next.
         </h2>
 
@@ -224,7 +222,7 @@ export function Features() {
                     aria-hidden="true"
                   />
                 </span>
-                <h3 className={`mt-5 text-lg ${filled ? "text-forest-foreground" : "text-foreground"}`}>
+                <h3 className={`mt-5 text-lg font-semibold ${filled ? "text-forest-foreground" : "text-foreground"}`}>
                   {f.title}
                 </h3>
                 <p
@@ -260,7 +258,7 @@ export function HowItWorks() {
         <div>
           <p className="eyebrow">How it works</p>
           <h2 className="mt-3 text-3xl leading-tight text-foreground sm:text-4xl">
-            A simple three-step journey
+            A simple <span className="text-forest">three-step journey</span>
             <br className="hidden sm:block" /> towards understanding your options.
           </h2>
 
@@ -271,7 +269,7 @@ export function HowItWorks() {
                   {i + 1}
                 </span>
                 <div className="min-w-0">
-                  <h3 className="text-base text-foreground">{s.title}</h3>
+                  <h3 className="text-base font-semibold text-foreground">{s.title}</h3>
                   <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{s.body}</p>
                 </div>
               </Reveal>
@@ -299,8 +297,8 @@ export function Solutions() {
         <p className="eyebrow">UK debt solutions</p>
         <div className="mt-3 grid gap-4 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-end">
           <h2 className="max-w-lg text-3xl leading-tight text-foreground sm:text-4xl">
-            Options a regulated
-            <br className="hidden sm:block" /> adviser may discuss.
+            Options a <span className="text-forest">regulated adviser</span>
+            <br className="hidden sm:block" /> may discuss.
           </h2>
           <Link
             to="/enquiry"
@@ -349,10 +347,10 @@ export function Solutions() {
 export function Testimonials() {
   return (
     <section className="bg-cream">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-        <p className="eyebrow text-center">Kind words</p>
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20 text-center">
+        <p className="eyebrow">Kind words</p>
         <h2 className="mt-3 text-center text-3xl text-foreground sm:text-4xl">
-          Real people, real relief.
+          <span className="text-forest">Real people,</span> real relief.
         </h2>
         <p className="mx-auto mt-3 max-w-xl text-center text-sm text-muted-foreground">
           A selection of feedback from people who have used our enquiry service.
@@ -401,10 +399,10 @@ export function Faq() {
 
   return (
     <section className="bg-background">
-      <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-        <p className="eyebrow text-center">Frequently asked</p>
+      <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20 text-center">
+        <p className="eyebrow">Frequently asked</p>
         <h2 className="mt-3 text-center text-3xl text-foreground sm:text-4xl">
-          Frequently Asked Questions
+          <span className="text-forest">Frequently Asked</span> Questions
         </h2>
 
 
@@ -420,7 +418,7 @@ export function Faq() {
                     aria-expanded={isOpen}
                     className="grid w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-5 text-left"
                   >
-                    <span className="min-w-0 text-sm text-foreground sm:text-base">{f.q}</span>
+                    <span className="min-w-0 font-medium text-foreground sm:text-base">{f.q}</span>
                     {isOpen ? (
                       <Minus className="h-4 w-4 shrink-0 text-forest" aria-hidden="true" />
                     ) : (

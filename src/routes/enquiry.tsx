@@ -30,7 +30,10 @@ function EnquiryPage() {
       <main>
         <section className="bg-gradient-to-b from-cream to-background">
           <div className="mx-auto max-w-3xl px-4 py-14 text-center sm:px-6 lg:px-8">
-            <h1 className="text-4xl text-foreground sm:text-5xl">Make an Enquiry</h1>
+            <p className="eyebrow">Free & Confidential</p>
+            <h1 className="mt-3 text-4xl text-foreground sm:text-5xl">
+              Make an <span className="text-forest">Enquiry</span>
+            </h1>
             <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground">
               Complete the form below and we'll pass your details to FCA-authorised and regulated
               partners who can discuss your options.

@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Square Up Any Debt",
-  tagline: "You don’t have to face debt alone. Explore your options and find the support you need.",
+  tagline: "Struggling With Debt? See What Options May Be Available",
 
   whatsappNumber: "447549562812", // international format, no + or spaces
   phoneDisplay: "+44 7549 562812",

@@ -54,7 +54,9 @@ function HowItWorksPage() {
         <section className="bg-cream">
           <div className="mx-auto max-w-3xl px-4 py-14 text-center sm:px-6 lg:px-8">
             <p className="eyebrow">The process</p>
-            <h1 className="mt-3 text-4xl text-foreground sm:text-5xl">How it works</h1>
+            <h1 className="mt-3 text-4xl text-foreground sm:text-5xl">
+              How It <span className="text-forest">Works</span>
+            </h1>
             <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">
               We know that reaching out about debt can feel like a big step. That’s why we’ve made
               the process as simple and straightforward as possible. From completing the short form
@@ -72,15 +74,15 @@ function HowItWorksPage() {
                 className="grid gap-5 sm:grid-cols-[auto_minmax(0,1fr)] sm:gap-8"
               >
                 <div className="flex items-center gap-3 sm:block">
-                  <p className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground sm:mb-3">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-forest sm:mb-3">
                     Step {i + 1}
                   </p>
-                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-forest text-sm text-forest-foreground">
+                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-forest text-sm font-semibold text-forest-foreground shadow-sm">
                     {i + 1}
                   </span>
                 </div>
                 <div className="min-w-0">
-                  <h2 className="text-2xl text-foreground">{s.title}</h2>
+                  <h2 className="text-2xl font-semibold text-foreground">{s.title}</h2>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.body}</p>
                 </div>
               </Reveal>
@@ -91,7 +93,10 @@ function HowItWorksPage() {
         <section className="bg-cream">
           <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
             <div className="rounded-xl border border-hairline bg-background p-6 shadow-[var(--shadow-soft)] sm:p-8">
-              <h2 className="text-2xl text-foreground">Our role, explained simply</h2>
+              <h2 className="text-2xl font-semibold text-foreground flex items-center gap-2.5">
+                <span className="h-6 w-1 rounded-full bg-forest inline-block" />
+                Our role, explained simply
+              </h2>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 We believe it’s important to be clear about what we do and how we can help.
               </p>

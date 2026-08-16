@@ -50,14 +50,19 @@ function LegalPage() {
         <section className="bg-cream">
           <div className="mx-auto max-w-3xl px-4 py-14 text-center sm:px-6 lg:px-8">
             <p className="eyebrow">Legal</p>
-            <h1 className="mt-3 text-4xl text-foreground sm:text-5xl">Legal & policies</h1>
+            <h1 className="mt-3 text-4xl text-foreground sm:text-5xl">
+              Legal & <span className="text-forest">Policies</span>
+            </h1>
           </div>
         </section>
         <section className="bg-background">
           <div className="mx-auto max-w-3xl space-y-8 px-4 py-16 sm:px-6 lg:px-8">
             {sections.map((s) => (
               <div key={s.h}>
-                <h2 className="text-2xl text-foreground">{s.h}</h2>
+                <h2 className="text-2xl font-semibold text-foreground flex items-center gap-2.5">
+                  <span className="h-5 w-1 rounded-full bg-forest inline-block" />
+                  {s.h}
+                </h2>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.p}</p>
               </div>
             ))}

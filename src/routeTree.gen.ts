@@ -15,6 +15,8 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as EnquiryRouteImport } from './routes/enquiry'
 import { Route as HowItWorksRouteImport } from './routes/how-it-works'
 import { Route as LegalRouteImport } from './routes/legal'
+import { Route as AdminPortalDashboardRouteImport } from './routes/admin-portal/dashboard'
+import { Route as AdminPortalLoginRouteImport } from './routes/admin-portal/login'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -46,6 +48,16 @@ const LegalRoute = LegalRouteImport.update({
   path: '/legal',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminPortalDashboardRoute = AdminPortalDashboardRouteImport.update({
+  id: '/admin-portal/dashboard',
+  path: '/admin-portal/dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminPortalLoginRoute = AdminPortalLoginRouteImport.update({
+  id: '/admin-portal/login',
+  path: '/admin-portal/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -54,6 +66,8 @@ export interface FileRoutesByFullPath {
   '/enquiry': typeof EnquiryRoute
   '/how-it-works': typeof HowItWorksRoute
   '/legal': typeof LegalRoute
+  '/admin-portal/dashboard': typeof AdminPortalDashboardRoute
+  '/admin-portal/login': typeof AdminPortalLoginRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -62,6 +76,8 @@ export interface FileRoutesByTo {
   '/enquiry': typeof EnquiryRoute
   '/how-it-works': typeof HowItWorksRoute
   '/legal': typeof LegalRoute
+  '/admin-portal/dashboard': typeof AdminPortalDashboardRoute
+  '/admin-portal/login': typeof AdminPortalLoginRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -71,13 +87,30 @@ export interface FileRoutesById {
   '/enquiry': typeof EnquiryRoute
   '/how-it-works': typeof HowItWorksRoute
   '/legal': typeof LegalRoute
+  '/admin-portal/dashboard': typeof AdminPortalDashboardRoute
+  '/admin-portal/login': typeof AdminPortalLoginRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
-    '/' | '/about' | '/contact' | '/enquiry' | '/how-it-works' | '/legal'
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/enquiry'
+    | '/how-it-works'
+    | '/legal'
+    | '/admin-portal/dashboard'
+    | '/admin-portal/login'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/contact' | '/enquiry' | '/how-it-works' | '/legal'
+  to:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/enquiry'
+    | '/how-it-works'
+    | '/legal'
+    | '/admin-portal/dashboard'
+    | '/admin-portal/login'
   id:
     | '__root__'
     | '/'
@@ -86,6 +119,8 @@ export interface FileRouteTypes {
     | '/enquiry'
     | '/how-it-works'
     | '/legal'
+    | '/admin-portal/dashboard'
+    | '/admin-portal/login'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -95,6 +130,8 @@ export interface RootRouteChildren {
   EnquiryRoute: typeof EnquiryRoute
   HowItWorksRoute: typeof HowItWorksRoute
   LegalRoute: typeof LegalRoute
+  AdminPortalDashboardRoute: typeof AdminPortalDashboardRoute
+  AdminPortalLoginRoute: typeof AdminPortalLoginRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -141,6 +178,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LegalRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin-portal/dashboard': {
+      id: '/admin-portal/dashboard'
+      path: '/admin-portal/dashboard'
+      fullPath: '/admin-portal/dashboard'
+      preLoaderRoute: typeof AdminPortalDashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin-portal/login': {
+      id: '/admin-portal/login'
+      path: '/admin-portal/login'
+      fullPath: '/admin-portal/login'
+      preLoaderRoute: typeof AdminPortalLoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -151,6 +202,8 @@ const rootRouteChildren: RootRouteChildren = {
   EnquiryRoute: EnquiryRoute,
   HowItWorksRoute: HowItWorksRoute,
   LegalRoute: LegalRoute,
+  AdminPortalDashboardRoute: AdminPortalDashboardRoute,
+  AdminPortalLoginRoute: AdminPortalLoginRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

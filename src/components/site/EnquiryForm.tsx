@@ -131,7 +131,9 @@ export function EnquiryForm() {
     return (
       <div className="mx-auto max-w-xl rounded-xl border border-hairline bg-cream p-8 text-center shadow-[var(--shadow-soft)]">
         <CheckCircle2 className="mx-auto h-8 w-8 text-forest" aria-hidden="true" />
-        <h2 className="mt-4 text-2xl text-foreground">Thank you — your enquiry is with us.</h2>
+        <h2 className="mt-4 text-2xl font-semibold text-foreground">
+          Thank You — Your Enquiry is <span className="text-forest">With Us.</span>
+        </h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           We've received your details and will pass them to FCA-authorised and regulated partners.
           Someone will normally be in touch within one working day. There is no obligation to

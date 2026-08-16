@@ -32,7 +32,9 @@ function ContactPage() {
         <section className="bg-cream">
           <div className="mx-auto max-w-3xl px-4 py-14 text-center sm:px-6 lg:px-8">
             <p className="eyebrow">Contact</p>
-            <h1 className="mt-3 text-4xl text-foreground sm:text-5xl">We're easy to reach.</h1>
+            <h1 className="mt-3 text-4xl text-foreground sm:text-5xl">
+              We're <span className="text-forest">Easy to Reach.</span>
+            </h1>
             <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground">
               Whether you'd like to start an enquiry or simply ask a question first, you can contact
               us in whichever way feels most comfortable.
@@ -45,7 +47,7 @@ function ContactPage() {
             <div className="grid gap-5 sm:grid-cols-2">
               <div className="rounded-xl border border-hairline bg-cream p-6">
                 <Mail className="h-5 w-5 text-forest" aria-hidden="true" />
-                <h2 className="mt-4 text-lg text-foreground">Email</h2>
+                <h2 className="mt-4 text-lg font-semibold text-foreground">Email</h2>
                 <a
                   href={`mailto:${siteConfig.email}`}
                   className="mt-2 block break-all text-sm text-muted-foreground hover:text-forest"
@@ -55,7 +57,7 @@ function ContactPage() {
               </div>
               <div className="rounded-xl border border-hairline bg-cream p-6">
                 <Phone className="h-5 w-5 text-forest" aria-hidden="true" />
-                <h2 className="mt-4 text-lg text-foreground">Phone</h2>
+                <h2 className="mt-4 text-lg font-semibold text-foreground">Phone</h2>
                 <a
                   href={`tel:${siteConfig.phone}`}
                   className="mt-2 block text-sm text-muted-foreground hover:text-forest"
@@ -66,11 +68,12 @@ function ContactPage() {
             </div>
 
             <div className="mt-8 rounded-xl border border-hairline bg-background p-6">
-              <h2 className="text-lg text-foreground">Registered address</h2>
-              <address className="mt-2 space-y-1 text-sm not-italic leading-relaxed text-muted-foreground">
-                {siteConfig.address.map((line) => (
-                  <p key={line}>{line}</p>
-                ))}
+              <h2 className="text-lg font-semibold text-foreground flex items-center gap-2">
+                <span className="h-4 w-1 rounded-full bg-forest inline-block" />
+                Our Office
+              </h2>
+              <address className="mt-2 text-sm not-italic leading-relaxed text-muted-foreground">
+                Suite 4.01, 4th Floor Capital House, 25 Chapel Street, London, England, NW1 5DH
               </address>
             </div>
 

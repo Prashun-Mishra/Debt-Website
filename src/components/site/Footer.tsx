@@ -30,7 +30,10 @@ export function Footer() {
           </div>
 
           <div className="space-y-1 text-sm leading-relaxed text-navy-foreground/60">
-            <p className="font-medium text-navy-foreground">Company details</p>
+            <p className="font-semibold text-navy-foreground flex items-center gap-2">
+              <span className="h-3 w-1 rounded-full bg-coral inline-block" />
+              Company details
+            </p>
             {siteConfig.address.map((line) => (
               <p key={line}>{line}</p>
             ))}
@@ -38,7 +41,8 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="mb-5 text-sm font-semibold tracking-wide text-navy-foreground">
+          <h3 className="mb-5 text-sm font-semibold tracking-wide text-navy-foreground flex items-center gap-2">
+            <span className="h-3 w-1 rounded-full bg-coral inline-block" />
             Quick Links
           </h3>
           <ul className="space-y-3.5 text-sm text-navy-foreground/70">
@@ -57,7 +61,10 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="mb-5 text-sm font-semibold tracking-wide text-navy-foreground">Legal</h3>
+          <h3 className="mb-5 text-sm font-semibold tracking-wide text-navy-foreground flex items-center gap-2">
+            <span className="h-3 w-1 rounded-full bg-coral inline-block" />
+            Legal
+          </h3>
           <ul className="space-y-3.5 text-sm text-navy-foreground/70">
             {legalLinks.map((l) => (
               <li key={l.label}>
