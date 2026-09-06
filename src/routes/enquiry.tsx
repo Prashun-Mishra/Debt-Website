@@ -2,12 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppFab } from "@/components/site/sections";
-import { RegulatoryNotice } from "@/components/site/RegulatoryNotice";
+import { RegulatoryNotice, MoneyHelperBanner } from "@/components/site/RegulatoryNotice";
 import { EnquiryForm } from "@/components/site/EnquiryForm";
 
 const title = "Make an Enquiry | Square Up Any Debt";
 const description =
-  "Complete our short, confidential form and we'll pass your details to FCA-authorised and regulated partners who can discuss your UK debt options.";
+  "Complete our short, confidential form and we'll connect you with regulated partners who can discuss your UK debt options.";
 
 export const Route = createFileRoute("/enquiry")({
   head: () => ({
@@ -27,6 +27,7 @@ function EnquiryPage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      <MoneyHelperBanner />
       <main>
         <section className="bg-gradient-to-b from-cream to-background">
           <div className="mx-auto max-w-3xl px-4 py-14 text-center sm:px-6 lg:px-8">
@@ -35,7 +36,7 @@ function EnquiryPage() {
               Make an <span className="text-forest">Enquiry</span>
             </h1>
             <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground">
-              Complete the form below and we'll pass your details to FCA-authorised and regulated
+              Complete the form below and we'll connect you with regulated
               partners who can discuss your options.
             </p>
           </div>

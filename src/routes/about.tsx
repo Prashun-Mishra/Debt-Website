@@ -7,7 +7,7 @@ import { RegulatoryNotice } from "@/components/site/RegulatoryNotice";
 
 const title = "About Us | Square Up Any Debt";
 const description =
-  "Square Up Any Debt is a UK lead provider. We pass enquiries to FCA-authorised and regulated partners who provide debt advice — we do not advise ourselves.";
+  "Square Up Any Debt is a UK lead provider. We pass enquiries to regulated partners who provide debt advice — we do not advise ourselves.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -88,9 +88,9 @@ function AboutPage() {
                 <div className="grid h-12 w-12 place-items-center rounded-xl bg-forest/10 text-forest transition-colors duration-300 group-hover:bg-forest group-hover:text-forest-foreground">
                   <ShieldCheck className="h-6 w-6" strokeWidth={1.5} />
                 </div>
-                <h3 className="mt-5 text-lg font-semibold text-foreground">Trusted, regulated support</h3>
+                <h3 className="mt-5 text-lg font-semibold text-foreground">Regulated support</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  We only refer to firms authorised and regulated by the Financial Conduct Authority. No shortcuts, no exceptions.
+                  We only refer to firms authorised and regulated by the Financial Conduct Authority.
                 </p>
               </div>
               <div className="group rounded-2xl border border-border/50 bg-background p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-forest/30">

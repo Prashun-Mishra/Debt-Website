@@ -9,14 +9,13 @@ import {
   HowItWorks,
   Solutions,
   Testimonials,
-  TrustBand,
   WhatsAppFab,
 } from "@/components/site/sections";
-import { MoneyHelperStrip, RegulatoryNotice } from "@/components/site/RegulatoryNotice";
+import { MoneyHelperBanner, MoneyHelperStrip, RegulatoryNotice } from "@/components/site/RegulatoryNotice";
 
 const title = "Square Up Any Debt | Free UK Debt Enquiry Service";
 const description =
-  "A calmer conversation about your debt. We connect you with FCA-authorised and regulated partners who can discuss UK debt solutions — no judgement, no pressure.";
+  "A calmer conversation about your debt. We connect you with regulated partners who can discuss UK debt solutions — no judgement, no pressure.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -36,9 +35,9 @@ function Index() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      <MoneyHelperBanner />
       <main>
         <Hero />
-        <TrustBand />
         <Features />
         <HowItWorks />
         <Solutions />

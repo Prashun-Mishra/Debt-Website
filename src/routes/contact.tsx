@@ -8,7 +8,7 @@ import { siteConfig } from "@/config/site";
 
 const title = "Contact Us | Square Up Any Debt";
 const description =
-  "Contact Square Up Any Debt by email, phone or WhatsApp, or submit a short confidential enquiry to be connected with FCA-authorised and regulated partners.";
+  "Contact Square Up Any Debt by email, phone or WhatsApp, or submit a short confidential enquiry to be connected with regulated partners.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -81,6 +81,10 @@ function ContactPage() {
               <CoralButton to="/enquiry">Make an Enquiry</CoralButton>
               <WhatsAppLinkButton />
             </div>
+            <p className="mt-4 text-[11px] leading-relaxed text-muted-foreground">
+              A debt solution may not be suitable in all circumstances. Fees may apply. Free, impartial advice is also available from{" "}
+              <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-forest">MoneyHelper</a>.
+            </p>
           </div>
         </section>
 

@@ -8,7 +8,7 @@ import { Reveal } from "@/components/site/Reveal";
 
 const title = "How It Works | Square Up Any Debt";
 const description =
-  "From a short enquiry form to speaking with an FCA-authorised adviser — here's exactly what to expect when you get in touch with Square Up Any Debt.";
+  "From a short enquiry form to speaking with a regulated adviser — here's exactly what to expect when you get in touch with Square Up Any Debt.";
 
 export const Route = createFileRoute("/how-it-works")({
   head: () => ({

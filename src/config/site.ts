@@ -39,7 +39,7 @@ export const features = [
   },
   {
     icon: "shield",
-    title: "FCA-Regulated Partners",
+    title: "Regulated Partners",
     body: "We only refer enquiries to firms that are authorised and regulated by the Financial Conduct Authority.",
   },
   {

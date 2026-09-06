@@ -9,7 +9,6 @@ import {
   Phone,
   Plus,
   Shield,
-  ShieldCheck,
   Star,
 } from "lucide-react";
 import { useState } from "react";
@@ -79,7 +78,7 @@ export function WhatsAppFab() {
 
 /* ---------------- Hero ---------------- */
 
-const trustPoints = ["No obligation to proceed", "FCA-authorised partners only", "Excellent Reviews"];
+const trustPoints = ["No obligation to proceed", "Confidential & no-pressure", "Free enquiry service"];
 
 export function Hero() {
   return (
@@ -90,7 +89,7 @@ export function Hero() {
             <span className="text-forest">Struggling With Debt?</span> See What Options May Be Available
           </h1>
           <p className="mt-6 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-            You may have options that could make managing your finances easier. Connect with a trusted FCA-regulated adviser to discuss your circumstances and understand what support may be available.
+            You may have options that could make managing your finances easier. Connect with a regulated adviser to discuss your circumstances and understand what support may be available.
           </p>
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
             Click "DEBT HELP" to get started. A member of our team will take the time to understand your situation and collect some initial information before connecting you with the right support.
@@ -102,6 +101,10 @@ export function Hero() {
             </CoralButton>
             <WhatsAppLinkButton />
           </div>
+          <p className="mt-4 max-w-xl text-[11px] leading-relaxed text-muted-foreground">
+            A debt solution may not be suitable in all circumstances. Fees may apply. Free, impartial advice is also available from{" "}
+            <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-forest">MoneyHelper</a>.
+          </p>
         </div>
 
 
@@ -133,13 +136,7 @@ export function Hero() {
               <span className="text-[10px] text-muted-foreground">Rated by real people</span>
             </div>
           </div>
-          <div className="absolute -bottom-4 left-3 flex items-center gap-2 rounded-xl bg-background px-3 py-2 shadow-[var(--shadow-float)] sm:left-6">
-            <ShieldCheck className="h-4 w-4 text-forest" aria-hidden="true" />
-            <div className="leading-tight">
-              <p className="text-[10px] text-muted-foreground">Referred only to</p>
-              <p className="text-xs font-medium text-foreground">FCA-authorised firms</p>
-            </div>
-          </div>
+
         </div>
       </div>
 
@@ -163,24 +160,7 @@ export function Hero() {
   );
 }
 
-/* ---------------- FCA band + cookie bar ---------------- */
-
-export function TrustBand() {
-  return (
-    <section className="relative bg-forest">
-      <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-8 sm:px-6 lg:flex-row lg:items-center lg:gap-10 lg:px-8">
-        <div className="shrink-0">
-          <p className="font-display text-2xl text-forest-foreground">FCA</p>
-          <p className="text-[11px] text-forest-foreground/60">Regulated partners only</p>
-        </div>
-        <p className="text-xs text-forest-foreground/70 lg:ml-6">
-          Enquiries are passed only to firms authorised and regulated by the Financial Conduct
-          Authority.
-        </p>
-      </div>
-    </section>
-  );
-}
+/* ---------------- (TrustBand removed for FCA compliance) ---------------- */
 
 /* ---------------- Why people choose us ---------------- */
 
@@ -348,12 +328,12 @@ export function Testimonials() {
   return (
     <section className="bg-cream">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20 text-center">
-        <p className="eyebrow">Kind words</p>
+        <p className="eyebrow">Feedback</p>
         <h2 className="mt-3 text-center text-3xl text-foreground sm:text-4xl">
-          <span className="text-forest">Real people,</span> real relief.
+          <span className="text-forest">What people</span> have said.
         </h2>
         <p className="mx-auto mt-3 max-w-xl text-center text-sm text-muted-foreground">
-          A selection of feedback from people who have used our enquiry service.
+          A selection of unverified feedback shared by people who have used our enquiry service.
         </p>
 
         <div className="mt-10 grid gap-5 md:grid-cols-3">
@@ -477,6 +457,10 @@ export function CtaBand() {
             +44 7700 900123
           </a>
         </div>
+        <p className="mx-auto mt-5 max-w-xl text-[11px] leading-relaxed text-forest-foreground/55">
+          A debt solution may not be suitable in all circumstances. Fees may apply. Free, impartial advice is also available from{" "}
+          <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-forest-foreground/80">MoneyHelper</a>.
+        </p>
       </div>
     </section>
   );

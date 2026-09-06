@@ -1,4 +1,47 @@
-import { Info } from "lucide-react";
+import { ExternalLink, Info } from "lucide-react";
+
+export function MoneyHelperBanner() {
+  return (
+    <div className="bg-[#f0f4f8] border-b border-hairline">
+      <div className="mx-auto flex max-w-7xl items-center justify-center gap-2 px-4 py-2.5 text-center text-xs text-muted-foreground sm:px-6 lg:px-8">
+        <span>
+          Free, impartial debt advice is available from{" "}
+          <a
+            href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 font-semibold text-[#3d5afe] underline underline-offset-2 hover:text-[#3d5afe]/80"
+          >
+            <span className="font-sans font-bold tracking-tight">
+              <span className="text-[#3d5afe]">Money</span>
+              <span className="text-[#e4007c]">Helper</span>
+            </span>
+            <ExternalLink className="h-3 w-3" aria-hidden="true" />
+          </a>
+          ,{" "}
+          <a
+            href="https://www.stepchange.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-foreground underline underline-offset-2 hover:text-forest"
+          >
+            StepChange
+          </a>
+          {" "}and{" "}
+          <a
+            href="https://www.citizensadvice.org.uk/debt-and-money/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-foreground underline underline-offset-2 hover:text-forest"
+          >
+            Citizens Advice
+          </a>
+          .
+        </span>
+      </div>
+    </div>
+  );
+}
 
 export function RegulatoryNotice() {
   return (

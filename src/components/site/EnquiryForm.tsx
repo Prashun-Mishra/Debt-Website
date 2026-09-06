@@ -296,6 +296,11 @@ export function EnquiryForm() {
           </>
         )}
       </button>
+
+      <p className="text-[11px] leading-relaxed text-muted-foreground text-center">
+        A debt solution may not be suitable in all circumstances. Fees may apply. Free, impartial advice is also available from{" "}
+        <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-forest">MoneyHelper</a>.
+      </p>
     </form>
   );
 }
