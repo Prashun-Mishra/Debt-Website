@@ -18,24 +18,6 @@ export function MoneyHelperBanner() {
             </span>
             <ExternalLink className="h-3 w-3" aria-hidden="true" />
           </a>
-          ,{" "}
-          <a
-            href="https://www.stepchange.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-semibold text-foreground underline underline-offset-2 hover:text-forest"
-          >
-            StepChange
-          </a>
-          {" "}and{" "}
-          <a
-            href="https://www.citizensadvice.org.uk/debt-and-money/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-semibold text-foreground underline underline-offset-2 hover:text-forest"
-          >
-            Citizens Advice
-          </a>
           .
         </span>
       </div>
@@ -52,6 +34,9 @@ export function RegulatoryNotice() {
           <p>
             We are a lead provider and pass enquiries to companies authorised and regulated by the
             Financial Conduct Authority. We do not provide debt advice ourselves.
+          </p>
+          <p>
+            Fees, risks, eligibility &amp; alternatives will be explained before you decide. We may receive referral fees.
           </p>
           <p className="text-coral">
             A debt solution may not be suitable in every situation, and fees may apply. Free,
@@ -76,8 +61,7 @@ export function MoneyHelperStrip() {
         </p>
 
         <p className="mt-3 text-xs leading-relaxed text-navy-foreground/55">
-          You can get free, independent and impartial debt advice from MoneyHelper, StepChange or
-          Citizens Advice. You do not have to use a commercial provider, and you should always
+          You can get free, independent and impartial debt advice from MoneyHelper. You do not have to use a commercial provider, and you should always
           compare your options before making a decision about your money.
         </p>
       </div>
