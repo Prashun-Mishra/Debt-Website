@@ -100,14 +100,23 @@ export function Footer() {
 
       <div className="mx-auto max-w-7xl px-4 pb-4 sm:px-6 lg:px-8">
         <div className="space-y-4 text-sm leading-relaxed text-navy-foreground/60">
-          <p>
-            Important information: We are a lead-generation service and do not provide regulated debt advice ourselves. With your consent, we may introduce you to an FCA-authorised and regulated debt advice firm. They will assess your circumstances and explain the available options, including the relevant fees, risks, eligibility criteria and alternatives, before you decide whether to proceed.
+          <p className="font-semibold text-navy-foreground/80">
+            Important information about fees and risks
           </p>
           <p>
-            If you choose to enter into a debt solution through one of our partners, fees may apply. These will be explained before you agree to proceed. We may receive a referral fee from a partner if you take up a debt solution following our introduction.
+            You may be offered the option of being referred to an authorised and regulated firm for a full advice call. They will assess your circumstances and explain any debt solutions that may be suitable for you. There is no obligation to proceed, and you are free to seek advice or support from any provider of your choice.
           </p>
           <p>
-            Debt solutions can have significant consequences and may affect your credit file and ability to obtain credit.
+            We do not charge you for making an enquiry or for the information provided through our service. If you choose to proceed with a debt solution through one of our partner firms, fees may apply for setting up and managing the arrangement. Any applicable fees will be explained to you before you decide whether to proceed.
+          </p>
+          <p>
+            Debt solutions are not suitable for everyone and entering into one can have significant consequences. Depending on the solution, it may affect your credit file and your ability to obtain credit, and there may be other risks or restrictions. A debt solution is not guaranteed, and you should consider all available options before making a decision.
+          </p>
+          <p>
+            We may receive a referral fee if you choose to proceed with a debt solution through one of our partner firms.
+          </p>
+          <p>
+            By submitting your details, you agree that we may contact you about your enquiry and, where appropriate, discuss referring you to an authorised and regulated debt advice provider.
           </p>
         </div>
       </div>
@@ -116,7 +125,7 @@ export function Footer() {
         <div className="border-t border-navy-foreground/10" />
       </div>
 
-      <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-7 text-sm text-navy-foreground/55 sm:px-6 lg:flex-row lg:items-start lg:justify-between lg:gap-16 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 py-7 text-center text-sm text-navy-foreground/55 sm:px-6 lg:px-8">
         <p>
           &copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
         </p>
