@@ -33,7 +33,7 @@ export function RegulatoryNotice() {
         <div className="space-y-1 text-xs leading-relaxed text-muted-foreground">
           <p>
             We are a lead provider and pass enquiries to companies authorised and regulated by the
-            Financial Conduct Authority. We do not provide debt advice ourselves.Fees, risks, eligibility &amp; alternatives will be explained before you decide. We may receive referral fees.
+            Financial Conduct Authority. We do not provide debt advice ourselves. Fees, risks, eligibility &amp; alternatives will be explained before you decide. We may receive referral fees.
           </p>
           <p className="text-coral">
             A debt solution may not be suitable in every situation, and fees may apply. Free,
