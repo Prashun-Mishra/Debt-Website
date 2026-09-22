@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import type { ReactNode } from "react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppFab } from "@/components/site/sections";
@@ -23,7 +24,7 @@ export const Route = createFileRoute("/legal")({
   component: LegalPage,
 });
 
-const sections = [
+const sections: { h: string; p: ReactNode }[] = [
   {
     h: "Privacy policy",
     p: "We collect only the details you give us in the enquiry form. Those details are used to pass your enquiry to FCA-authorised and regulated partners, and are processed in line with UK GDPR. You can ask us to remove your data at any time.",
@@ -39,6 +40,25 @@ const sections = [
   {
     h: "Complaints procedure",
     p: "If you are unhappy with our service, please contact us and we will acknowledge your complaint within five working days and aim to resolve it within eight weeks.",
+  },
+  {
+    h: "Withdraw your consent",
+    p: (
+      <>
+        <span>You can withdraw your consent for us to process your personal information at any time.</span>
+        <br className="mb-2" />
+        <span>
+          To withdraw your consent, please contact us at{" "}
+          <a
+            href={`mailto:${siteConfig.privacyEmail}`}
+            className="text-forest underline underline-offset-4 hover:text-forest-dark"
+          >
+            {siteConfig.privacyEmail}
+          </a>
+          .
+        </span>
+      </>
+    ),
   },
 ];
 
@@ -66,16 +86,6 @@ function LegalPage() {
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.p}</p>
               </div>
             ))}
-            <p className="text-sm text-muted-foreground">
-              For any privacy request, email{" "}
-              <a
-                href={`mailto:${siteConfig.privacyEmail}`}
-                className="text-forest underline underline-offset-4"
-              >
-                {siteConfig.privacyEmail}
-              </a>
-              .
-            </p>
           </div>
         </section>
         <RegulatoryNotice />

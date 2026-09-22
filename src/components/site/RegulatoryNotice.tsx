@@ -13,7 +13,7 @@ export function MoneyHelperLink({
       href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt"
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-flex items-center gap-1 font-semibold text-[#3d5afe] underline underline-offset-2 hover:text-[#3d5afe]/80 ${className}`}
+      className={`inline-flex items-center gap-1 font-semibold text-[#3d5afe] underline underline-offset-2 hover:text-[#3d5afe]/80 whitespace-nowrap ${className}`}
     >
       <span
         className={`font-sans font-bold tracking-tight ${

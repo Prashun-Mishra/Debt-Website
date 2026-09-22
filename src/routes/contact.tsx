@@ -81,11 +81,16 @@ function ContactPage() {
               <CoralButton to="/enquiry">Make an Enquiry</CoralButton>
               <WhatsAppLinkButton />
             </div>
-            <p className="mt-4 text-[11px] leading-relaxed text-muted-foreground inline-flex flex-wrap items-center gap-x-1 gap-y-0.5">
-              <span>A debt solution may not be suitable for everyone. Fees may apply and entering into a debt solution can affect your credit file and ability to obtain credit. You should consider all available options before deciding whether to proceed. Free, impartial debt advice is available. You can get free, impartial and not-for-profit debt advice from</span>{" "}
-              <MoneyHelperLink />{" "}
-              <span>before deciding whether to use a commercial debt solution.</span>
-            </p>
+            <div className="mt-4 space-y-1.5 text-[11px] leading-relaxed text-muted-foreground">
+              <p>
+                A debt solution may not be suitable for everyone. Fees may apply and entering into a debt solution can affect your credit file and ability to obtain credit. You should consider all available options before deciding whether to proceed.
+              </p>
+              <p>
+                Free, impartial debt advice is available. You can get free, impartial and not-for-profit debt advice from{" "}
+                <MoneyHelperLink />{" "}
+                before deciding whether to use a commercial debt solution.
+              </p>
+            </div>
           </div>
         </section>
 
