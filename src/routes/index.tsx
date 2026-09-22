@@ -8,7 +8,6 @@ import {
   Hero,
   HowItWorks,
   Solutions,
-  Testimonials,
   WhatsAppFab,
 } from "@/components/site/sections";
 import { MoneyHelperBanner, MoneyHelperStrip, RegulatoryNotice } from "@/components/site/RegulatoryNotice";
@@ -41,7 +40,6 @@ function Index() {
         <Features />
         <HowItWorks />
         <Solutions />
-        <Testimonials />
         <Faq />
         <CtaBand />
         <MoneyHelperStrip />

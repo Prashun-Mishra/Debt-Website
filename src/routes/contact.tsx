@@ -3,7 +3,7 @@ import { Mail, Phone } from "lucide-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { CoralButton, WhatsAppLinkButton, WhatsAppFab } from "@/components/site/sections";
-import { RegulatoryNotice } from "@/components/site/RegulatoryNotice";
+import { RegulatoryNotice, MoneyHelperLink } from "@/components/site/RegulatoryNotice";
 import { siteConfig } from "@/config/site";
 
 const title = "Contact Us | Square Up Any Debt";
@@ -81,9 +81,10 @@ function ContactPage() {
               <CoralButton to="/enquiry">Make an Enquiry</CoralButton>
               <WhatsAppLinkButton />
             </div>
-            <p className="mt-4 text-[11px] leading-relaxed text-muted-foreground">
-              A debt solution may not be suitable in all circumstances. Fees may apply. Free, impartial advice is also available from{" "}
-              <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-forest">MoneyHelper</a>.
+            <p className="mt-4 text-[11px] leading-relaxed text-muted-foreground inline-flex flex-wrap items-center gap-x-1 gap-y-0.5">
+              <span>A debt solution may not be suitable for everyone. Fees may apply and entering into a debt solution can affect your credit file and ability to obtain credit. You should consider all available options before deciding whether to proceed. Free, impartial debt advice is available. You can get free, impartial and not-for-profit debt advice from</span>{" "}
+              <MoneyHelperLink />{" "}
+              <span>before deciding whether to use a commercial debt solution.</span>
             </p>
           </div>
         </section>

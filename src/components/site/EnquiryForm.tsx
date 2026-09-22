@@ -3,6 +3,7 @@ import { ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
 import { debtLevelOptions, employmentOptions, siteConfig } from "@/config/site";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import { MoneyHelperLink } from "@/components/site/RegulatoryNotice";
 
 type Values = {
   fullName: string;
@@ -297,9 +298,10 @@ export function EnquiryForm() {
         )}
       </button>
 
-      <p className="text-[11px] leading-relaxed text-muted-foreground text-center">
-        A debt solution may not be suitable in all circumstances. Fees may apply. Free, impartial advice is also available from{" "}
-        <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-forest">MoneyHelper</a>.
+      <p className="text-[11px] leading-relaxed text-muted-foreground text-center inline-flex flex-wrap items-center justify-center gap-x-1 gap-y-0.5">
+        <span>A debt solution may not be suitable for everyone. Fees may apply and entering into a debt solution can affect your credit file and ability to obtain credit. You should consider all available options before deciding whether to proceed. Free, impartial debt advice is available. You can get free, impartial and not-for-profit debt advice from</span>{" "}
+        <MoneyHelperLink />{" "}
+        <span>before deciding whether to use a commercial debt solution.</span>
       </p>
     </form>
   );

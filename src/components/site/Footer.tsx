@@ -101,22 +101,40 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 pb-4 sm:px-6 lg:px-8">
         <div className="space-y-4 text-sm leading-relaxed text-navy-foreground/60">
           <p className="font-semibold text-navy-foreground/80">
-            Important information about fees and risks
+            Important Information About Fees, Referrals and Risks
           </p>
           <p>
-            You may be offered the option of being referred to an authorised and regulated firm for a full advice call. They will assess your circumstances and explain any debt solutions that may be suitable for you. There is no obligation to proceed, and you are free to seek advice or support from any provider of your choice.
+            You may be offered the option of being referred to an authorised and regulated debt advice firm for a full advice call. The firm will assess your individual circumstances and explain the debt solutions that may be available to you. There is no obligation to proceed, and you are free to seek advice or support from any provider of your choice.
           </p>
           <p>
-            We do not charge you for making an enquiry or for the information provided through our service. If you choose to proceed with a debt solution through one of our partner firms, fees may apply for setting up and managing the arrangement. Any applicable fees will be explained to you before you decide whether to proceed.
+            We do not charge you for making an enquiry or for the information provided through our service. However, if you choose to proceed with a debt solution through one of our partner firms, fees may apply for setting up and managing the arrangement. Any applicable fees will be clearly explained to you by the partner firm before you decide whether to proceed.
           </p>
           <p>
-            Debt solutions are not suitable for everyone and entering into one can have significant consequences. Depending on the solution, it may affect your credit file and your ability to obtain credit, and there may be other risks or restrictions. A debt solution is not guaranteed, and you should consider all available options before making a decision.
+            We may receive a referral fee if you proceed with a debt solution through one of our partner firms. The partner firm may also charge fees for its services. Details of any applicable fees will be provided by the firm before you enter into an arrangement.
           </p>
           <p>
-            We may receive a referral fee if you choose to proceed with a debt solution through one of our partner firms.
+            By submitting your details, you consent to us contacting you regarding your enquiry and, where appropriate, discussing the option of referring you to an authorised and regulated debt advice provider.
+          </p>
+          <p className="font-semibold text-navy-foreground/80 pt-2">
+            Important Risks
           </p>
           <p>
-            By submitting your details, you agree that we may contact you about your enquiry and, where appropriate, discuss referring you to an authorised and regulated debt advice provider.
+            Debt solutions can have significant financial consequences. Depending on the type of solution and your individual circumstances, entering into a debt solution may affect your credit rating or credit file and could affect your ability to obtain credit in the future.
+          </p>
+          <p>
+            You are under no obligation to proceed with any debt solution offered to you. We recommend that you consider whether any information or solution presented is appropriate for your individual circumstances and seek independent debt advice where appropriate.
+          </p>
+          <p>
+            Free, impartial debt advice is available. You can get free, impartial and not-for-profit debt advice from{" "}
+            <a
+              href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-navy-foreground"
+            >
+              MoneyHelper
+            </a>{" "}
+            before deciding whether to use a commercial debt solution.
           </p>
         </div>
       </div>

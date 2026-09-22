@@ -15,7 +15,8 @@ import { useState } from "react";
 import heroPortrait from "@/assets/hero-portrait.jpg";
 import howItWorksImg from "@/assets/how-it-works.jpg";
 import { Reveal } from "@/components/site/Reveal";
-import { faqs, features, solutions, steps, testimonials, whatsappLink } from "@/config/site";
+import { MoneyHelperLink } from "@/components/site/RegulatoryNotice";
+import { faqs, features, solutions, steps, whatsappLink } from "@/config/site";
 
 /* ---------------- Shared bits ---------------- */
 
@@ -89,10 +90,13 @@ export function Hero() {
             <span className="text-forest">Struggling With Debt?</span> See What Options May Be Available
           </h1>
           <p className="mt-6 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+            Get free debt advice from <MoneyHelperLink />.
+          </p>
+          <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
             You may have options that could make managing your finances easier. Connect with a regulated adviser to discuss your circumstances and understand what support may be available.
           </p>
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-            Click "DEBT HELP" to get started. A member of our team will take the time to understand your situation and collect some initial information before connecting you with the right support.
+            If you would like to make an enquiry with us, CLICK DEBT HELP and we can explain what happens next. A member of our team will take the time to understand your situation and collect some initial information before connecting you with the right support.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <CoralButton to="/enquiry">
@@ -101,9 +105,10 @@ export function Hero() {
             </CoralButton>
             <WhatsAppLinkButton />
           </div>
-          <p className="mt-4 max-w-xl text-[11px] leading-relaxed text-muted-foreground">
-            A debt solution may not be suitable in all circumstances. Fees may apply. Free, impartial advice is also available from{" "}
-            <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-forest">MoneyHelper</a>.
+          <p className="mt-4 max-w-xl text-[11px] leading-relaxed text-muted-foreground inline-flex flex-wrap items-center gap-x-1 gap-y-0.5">
+            <span>A debt solution may not be suitable for everyone. Fees may apply and entering into a debt solution can affect your credit file and ability to obtain credit. You should consider all available options before deciding whether to proceed. Free, impartial debt advice is available. You can get free, impartial and not-for-profit debt advice from</span>{" "}
+            <MoneyHelperLink />{" "}
+            <span>before deciding whether to use a commercial debt solution.</span>
           </p>
         </div>
 
@@ -322,56 +327,6 @@ export function Solutions() {
   );
 }
 
-/* ---------------- Testimonials ---------------- */
-
-export function Testimonials() {
-  return (
-    <section className="bg-cream">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20 text-center">
-        <p className="eyebrow">Feedback</p>
-        <h2 className="mt-3 text-center text-3xl text-foreground sm:text-4xl">
-          <span className="text-forest">What people</span> have said.
-        </h2>
-        <p className="mx-auto mt-3 max-w-xl text-center text-sm text-muted-foreground">
-          A selection of unverified feedback shared by people who have used our enquiry service.
-        </p>
-
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
-          {testimonials.map((t, i) => (
-            <Reveal
-              as="figure"
-              key={t.name}
-              delay={i * 90}
-              className="card-lift flex flex-col rounded-xl border border-hairline bg-background p-6 shadow-[var(--shadow-soft)] hover:border-forest/25"
-            >
-              <span className="font-display text-3xl leading-none text-coral" aria-hidden="true">
-                &ldquo;
-              </span>
-              <blockquote className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
-                {t.quote}
-              </blockquote>
-              <figcaption className="mt-6 grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 border-t border-hairline pt-4">
-                <span className="flex min-w-0 items-center gap-3">
-                  <span className="h-8 w-8 shrink-0 rounded-full bg-cream-deep" aria-hidden="true" />
-                  <span className="min-w-0">
-                    <span className="block truncate text-sm text-foreground">{t.name}</span>
-                    <span className="block truncate text-xs text-muted-foreground">{t.role}</span>
-                  </span>
-                </span>
-                <span className="flex shrink-0 text-coral" aria-label="5 out of 5 stars">
-                  {[0, 1, 2, 3, 4].map((i) => (
-                    <Star key={i} className="h-3 w-3 fill-current" aria-hidden="true" />
-                  ))}
-                </span>
-              </figcaption>
-            </Reveal>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
 /* ---------------- FAQ ---------------- */
 
 export function Faq() {
@@ -457,9 +412,10 @@ export function CtaBand() {
             +44 7700 900123
           </a>
         </div>
-        <p className="mx-auto mt-5 max-w-xl text-[11px] leading-relaxed text-forest-foreground/55">
-          A debt solution may not be suitable in all circumstances. Fees may apply. Free, impartial advice is also available from{" "}
-          <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-forest-foreground/80">MoneyHelper</a>.
+        <p className="mx-auto mt-5 max-w-xl text-[11px] leading-relaxed text-forest-foreground/80 inline-flex flex-wrap items-center justify-center gap-x-1 gap-y-0.5">
+          <span>A debt solution may not be suitable for everyone. Fees may apply and entering into a debt solution can affect your credit file and ability to obtain credit. You should consider all available options before deciding whether to proceed. Free, impartial debt advice is available. You can get free, impartial and not-for-profit debt advice from</span>{" "}
+          <MoneyHelperLink />{" "}
+          <span>before deciding whether to use a commercial debt solution.</span>
         </p>
       </div>
     </section>

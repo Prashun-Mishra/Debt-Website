@@ -120,7 +120,7 @@ export const faqs = [
   },
   {
     q: "2 - Will it cost me anything to make an enquiry?",
-    a: "No. Making an enquiry through our website is completely free.\n\nWe don’t provide regulated debt advice ourselves. With your consent, we may introduce you to an authorised and regulated firm who can discuss your circumstances and available options.\n\nIf you choose to proceed with a solution, we may receive a referral fee. There’s no obligation to proceed, and you can access free, impartial guidance from MoneyHelper at any time.",
+    a: "No. Making an enquiry through our website is completely free.\n\nWe don’t provide regulated debt advice ourselves. With your consent, we may introduce you to an authorised and regulated firm who can discuss your circumstances and available options.\n\nIf you choose to proceed with a solution, we may receive a referral fee. There’s no obligation to proceed. Free, impartial debt advice is available. You can get free, impartial and not-for-profit debt advice from MoneyHelper before deciding whether to use a commercial debt solution.",
   },
   {
     q: "3 - What debt solutions might be available to me?",
