@@ -105,14 +105,19 @@ export function Hero() {
             </CoralButton>
             <WhatsAppLinkButton />
           </div>
-          <div className="mt-4 max-w-xl space-y-1.5 text-[11px] leading-relaxed text-muted-foreground">
-            <p>
-              A debt solution may not be suitable for everyone. Fees may apply and entering into a debt solution can affect your credit file and ability to obtain credit. You should consider all available options before deciding whether to proceed.
+          <div className="mt-4 max-w-xl space-y-2 text-[11px] leading-relaxed text-muted-foreground">
+            <p className="font-semibold text-foreground/85">
+              Important information before you enquire
             </p>
             <p>
-              Free, impartial debt advice is available. You can get free, impartial and not-for-profit debt advice from{" "}
-              <MoneyHelperLink />{" "}
-              before deciding whether to use a commercial debt solution.
+              A debt solution may not be suitable for everyone. Depending on the solution and your circumstances, entering into a debt solution may affect your credit file and your ability to obtain credit. There may also be other costs, restrictions and consequences.
+            </p>
+            <p>
+              We do not provide regulated debt advice ourselves. An authorised and regulated adviser will assess your circumstances and explain the available options, including relevant fees and risks, before you decide whether to proceed.
+            </p>
+            <p>
+              Free, impartial and not-for-profit debt advice is also available from{" "}
+              <MoneyHelperLink />.
             </p>
           </div>
         </div>
